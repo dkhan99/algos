@@ -6,8 +6,8 @@ function reverseString(str) {
 reverseString("hello");
 
 //  Are all the characters in a string unique
-// doesn't work for spaces
-var isU = function(str){
+
+var isUnique = function(str){
     for(i=0; i<str.length; i++){
         for(j=i+1; j<str.length; j++){
             if(str.charAt(i) === str.charAt(j) && str.charAt(i) != " "){return false}
