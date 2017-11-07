@@ -1,4 +1,4 @@
-// Reverse a string 
+// Reverse a string by turning into an array, reversing, and then back to a string
 
 function reverseString(str) {
     return str.split("").reverse().join("");
