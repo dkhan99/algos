@@ -15,3 +15,17 @@ var isUnique = function(str){
     }
     return true
 }
+
+// Are two strings permutations of eachother
+
+function isPerm(a,b) {
+	if (a.length != b.length) {return false}
+	if (a.split("").sort().join() != b.split("").sort().join()) {
+		return false;
+	}
+	return true;
+}
+console.log(isPerm("danyal","laynad"))
+console.log(isPerm("dan./yal","layn./ad"))
+console.log(isPerm("dannyl","laanyd"))
+console.log(isPerm("dannyl","jawad"))
