@@ -25,7 +25,24 @@ function isPerm(a,b) {
 	}
 	return true;
 }
-console.log(isPerm("danyal","laynad"))
-console.log(isPerm("dan./yal","layn./ad"))
-console.log(isPerm("dannyl","laanyd"))
-console.log(isPerm("dannyl","jawad"))
+
+// URLify
+
+function toURL(str) {
+	return str.trim().split(" ").join('%20')
+}
+
+console.log(toURL("make this a url    "))
+
+
+
+
+
+
+
+
+
+
+
+
+
