@@ -32,10 +32,41 @@ function toURL(str) {
 	return str.trim().split(" ").join('%20')
 }
 
-console.log(toURL("make this a url    "))
+// console.log(toURL("make this a url    "))
 
 
 
+// is Palindrome Permutation
+
+function isPalPerm(str) {
+	var arr = str.split(" ").join('').toLowerCase().split("").sort();
+	var odd = 0;
+	for (var i = 0; i < arr.length; i++) {
+		if (arr[i] === arr[i+1]) {
+			if (arr[i] === arr[i+2]){
+				if (arr[i] === arr[i+2]){
+					i++
+				}else{
+					odd++;
+					i += 2
+				}
+			}
+			else{	
+				i++
+			}
+		}else {
+			odd++
+		}
+	}
+	if (odd > 1){
+		return false
+	}
+	else{
+	return true
+	}
+}
+
+console.log(isPalPerm("Aaabbbbaaa"))
 
 
 
