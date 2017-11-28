@@ -66,11 +66,25 @@ function isPalPerm(str) {
 	}
 }
 
-console.log(isPalPerm("Aaabbbbaaa"))
+// console.log(isPalPerm("Aaabbbbaaa"))
 
 
 
+// Find the nth term in the Fibonacci sequence
 
+function rFib(n) {
+	if (n<2) {
+		return n;
+	} else {
+		return (rFib(n-1)+rFib(n-2))
+	}
+}
+
+// console.log(rFib(40))
+
+
+
+Check if Prime number
 
 
 
